@@ -1,0 +1,22 @@
+endpoints:
+  # Monitor
+  - name: Prometheus
+    group: Monitor
+    url: "https://www.instagram.com"
+    interval: 1m
+    conditions:
+      - "[STATUS] == 200"
+    alerts:
+      - type: email
+        enabled: true
+        description: "healthcheck failed"
+        send-on-resolved: true
+
+alerting:
+  email:
+    from: "shuaiahua@gmail.com"
+    host: "smtp.mediatek.inc"
+    username: "srv_it_eas1_tester@xxxxxx"
+    password: "lafa32042182"
+    port: 25
+    to: "shuaiahua@gmail.com"
