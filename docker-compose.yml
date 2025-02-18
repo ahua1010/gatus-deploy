@@ -9,7 +9,7 @@ services:
       POSTGRES_USER: gatus
       POSTGRES_PASSWORD: password
       POSTGRES_DB: gatus
-    restart: unless-stopped
+    tty: true
 
   gatus:
     build: .
