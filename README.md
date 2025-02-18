@@ -10,11 +10,11 @@
 
 ## 專案結構
 
-gatus-deploy/
-├── docker-compose.yml # Docker 服務配置
-├── config/
-│ └── config.yaml # Gatus 監控配置
-└── pgdata/ # PostgreSQL 數據持久化目錄
+  gatus-deploy/
+  ├── docker-compose.yml # Docker 服務配置
+  ├── config/
+  │ └── config.yaml # Gatus 監控配置
+  └── pgdata/ # PostgreSQL 數據持久化目錄
 
 
 ## Gatus 配置說明
