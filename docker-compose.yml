@@ -9,7 +9,7 @@ services:
       POSTGRES_USER: gatus
       POSTGRES_PASSWORD: password
       POSTGRES_DB: gatus
-    tty: true
+    restart: unless-stopped
 
   gatus:
     build: .
@@ -18,6 +18,11 @@ services:
       - ./config:/config
     ports:
       - "8080:8080"
+    environment:
+      POSTGRES_USER: gatus
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: gatus
+      POSTGRES_HOST: postgres  # 這裡要指向 postgres 服務名稱
     depends_on:
       - postgres
     restart: unless-stopped
