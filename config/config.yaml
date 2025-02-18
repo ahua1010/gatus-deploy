@@ -1,3 +1,6 @@
+storage:
+  type: postgres
+  path: "postgres://gatus:password@postgres:5432/gatus?sslmode=disable"
 endpoints:
   # Monitor
   - name: Prometheus

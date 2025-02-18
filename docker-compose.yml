@@ -22,7 +22,7 @@ services:
       POSTGRES_USER: gatus
       POSTGRES_PASSWORD: password
       POSTGRES_DB: gatus
-      POSTGRES_HOST: postgres  # 這裡要指向 postgres 服務名稱
+      POSTGRES_HOST: postgres
     depends_on:
       - postgres
     restart: unless-stopped
