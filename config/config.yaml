@@ -17,9 +17,9 @@ endpoints:
 
 alerting:
   email:
-    from: "shuaiahua@gmail.com"
+    from: "user1@example.com"
     host: "smtp.mediatek.inc"
     username: "srv_it_eas1_tester@xxxxxx"
-    password: "lafa32042182"
+    password: "your_password"
     port: 25
-    to: "shuaiahua@gmail.com"
+    to: "user2@example.com"
